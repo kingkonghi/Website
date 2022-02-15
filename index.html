@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>Herman's blog</title>
+        <meta charset="utf-8">
+       
+        <link href="index.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+        
+    </head>
+    <body>
+        <h1>Herman Page</h1>
+        
+    <div class="menu" id="myMenu">
+            <ul class="menu-list">
+              <li class="menu-list-item"><a href="index.html">Home</a></li>
+              <li class="menu-list-item"><a href="course.html">Courses</a></li> 
+              <li class="menu-list-item"><a href="album/album.html">Album</a></li> 
+              <li class="menu-list-item"><a href="chatbot/test.html">Test</a></li> 
+            </ul>
+    </div>
+    <div id="introduction">
+        <h2><span id="Hello">Hello</span>. Now time is: <span id="datetime">error</span></h2>
+        <script>
+            var dt = new Date();
+            var hour = dt.getHours;
+
+            if(hour<=6 || hour >=20)
+            document.getElementById("Hello").innerHTML = "Good night";
+            else if(hour<=12)
+            document.getElementById("Hello").innerHTML = "Good morning";
+            else if(hour<=17)
+            document.getElementById("Hello").innerHTML = "Good afternoon";
+            else
+            document.getElementById("Hello").innerHTML = "Good evening";
+            
+
+            document.getElementById("datetime").innerHTML = dt.toLocaleTimeString();
+            </script>
+        <p>Here is my page. You can find the feedback of the courses that I have studied.</p>
+        <img src="" alt="My photo">
+    </div>
+
+        <div id="comment">
+            <h2>About me:</h2>
+            <p>Tell me your ideas :<input type="text"> <button onclick="myFunction()">Send</button></p>
+            <p> 
+                <a href="https://www.facebook.com/HermanLee1221/" class="fa fa-facebook"></a>
+                <a href="https://www.instagram.com/hermanlee_1221/" class="fa fa-instagram"></a>
+                <a href="https://github.com/kingkonghi" class="fa fa-github"></a>
+                <a href="https://www.linkedin.com/in/lee-kong-yau-2a4438164/" class="fa fa-linkedin"></a>
+            </p>    
+        </div>
+        
+        <h6>Herman © 2022</h6>
+        
+    </body>
+</html>

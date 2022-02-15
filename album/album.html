@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>Herman's blog</title>
+        <meta charset="utf-8">
+       
+        <link href="album.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">        
+        
+    </head>
+    <body >
+        <h1>Herman Page</h1>
+    <div class="menu" id="myMenu">
+            <ul class="menu-list">
+              <li class="menu-list-item"><a href="../index.html">Home</a></li>
+              <li class="menu-list-item"><a href="../course.html">Courses</a></li> 
+              <li class="menu-list-item"><a href="../album/album.html">Album</a></li> 
+              <li class="menu-list-item"><a href="../chatbot/test.html">Test</a></li> 
+            </ul>
+    </div>
+
+        <div id="album">
+            <h2>My album</h2>
+            <p>Some interesting photos will post here</p>
+
+        </div>
+
+        <section class="gallery">
+            <div class="gallery__item">
+              <input type="radio" id="img-1" checked name="gallery" class="gallery__selector"/>
+              <img class="gallery__img" src="japanex.png" alt=""/>
+              <label for="img-1" class="gallery__thumb"><img src="japanex.png" alt=""/></label>
+            </div>
+            <div class="gallery__item">
+              <input type="radio" id="img-2" name="gallery" class="gallery__selector"/>
+              <img class="gallery__img" src="DSC_3627.png" alt=""/>
+              <label for="img-2" class="gallery__thumb"><img src="DSC_3627.png" alt=""/></label>
+            </div>
+            <div class="gallery__item">
+              <input type="radio" id="img-3" name="gallery" class="gallery__selector"/>
+              <img class="gallery__img" src="DSC_1137.jpg" alt=""/>
+              <label for="img-3" class="gallery__thumb"><img src="DSC_1137.jpg" alt=""/></label>
+            </div>
+            <div class="gallery__item">
+              <input type="radio" id="img-4" name="gallery" class="gallery__selector"/>
+              <img class="gallery__img" src="IMG_1925.JPG" alt=""/>
+              <label for="img-4" class="gallery__thumb"><img src="IMG_1925.JPG" alt=""/></label>
+            </div>
+            <div class="gallery__item">
+                <input type="radio" id="img-5" name="gallery" class="gallery__selector"/>
+                <img class="gallery__img" src="DSC_4735.jpg" alt=""/>
+                <label for="img-5" class="gallery__thumb"><img src="DSC_4735.jpg" alt=""/></label>
+              </div>
+          </section>
+
+
+
+          <div id="comment">
+            <h2>About me:</h2>
+            <p>Tell me your ideas :<input type="text"> <button onclick="myFunction()">Send</button></p>
+            <p> 
+                <a href="https://www.facebook.com/HermanLee1221/" class="fa fa-facebook"></a>
+                <a href="https://www.instagram.com/hermanlee_1221/" class="fa fa-instagram"></a>
+                <a href="https://github.com/kingkonghi" class="fa fa-github"></a>
+                <a href="https://www.linkedin.com/in/lee-kong-yau-2a4438164/" class="fa fa-linkedin"></a>
+            </p>    
+        </div>
+        
+        <h6>Herman © 2022</h6>
+
+        <script src="https://www.gstatic.com/firebasejs/9.6.4/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/9.6.4/firebase-firestore.js"></script>
+        <script src="firebase.js"></script>
+        <script src="album.js"></script>
+    </body>
+</html>
